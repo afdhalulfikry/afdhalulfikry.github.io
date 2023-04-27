@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afdhalul Fikry</title>
+    <link rel="icon" type="image/x-icon" href="images/logoAFW.png" />
+    <!-- Fontawesome icons -->
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="ano
+    "
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header start -->
+
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="#" class="navbar-logo">Afdhalul <span>Fikry</span></a>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()" id="bars"></i>
+          <label>
+            <input type="checkbox" id="dark" />
+            <span class="check"></span>
+            <span class="simbol"
+              ><i class="fa-sharp fa-solid fa-lightbulb"></i
+            ></span>
+          </label>
+        </nav>
+        <div class="header-text" id="header-text">
+          <p>Computer Engineering</p>
+          <h1>Hi, I'm Afdhalul <span>Fikry</span><br />from indonesia</h1>
+        </div>
+      </div>
+    </div>
+    <!-- About start-->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" />
+          </div>
+          <div class="about-col-2" id="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Saya Afdhalul Fikry, Sarjana Sistem Komputer Universitas Putra
+              Indonesia Yayasan Perguruan Tinggi Komputer (UPI YPTK) Padang
+              tahun 2022. Selama kuliah menguasai teori Keilmuan Dasar Rekayasa
+              Komputer, Jaringan Komputer, Pemograman Microcontroller berbasis
+              C++, dan Mekatronik. Memiliki pengalaman sebagai Staff Information
+              Technology (IT) di PT. Nusantara Salvage Engineering.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Computer Network</span><br />Mengkonfigurasi dan
+                  memelihara jaringan
+                </li>
+                <li>
+                  <span>Computer Engineering</span><br />Merakit, Menginstall
+                  dan Memperbaiki Komputer
+                </li>
+                <li>
+                  <span>Web Development</span><br />Website Interfaces
+                  Development
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Agustus 2022 - Februari 2023</span><br />PT. Nusantara
+                  Salvage Engineering (Batam, Indonesia)
+                  <p>Staff IT</p>
+                </li>
+                <li>
+                  <span>April - Juli 2016</span><br />PT. Next Technology
+                  Indonesia (Batam, Indonesia)
+                  <p>IT Network</p>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span
+                    >Universitas Putra Indonesia “YPTK” Padang (2018-2022) </span
+                  ><br />S1 Sistem Komputer
+                </li>
+                <li>
+                  <span>SMK N 1 Tilatang Kamang (2014-2017)</span><br />Teknik
+                  Komputer Jaringan (TKJ)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About end -->
+    <!-- Header End -->
+
+    <!-- Service -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-satellite-dish"></i>
+            <h2>Computer Network</h2>
+            <p>
+              Jaringan komputer adalah sekelompok komputer yang terhubung satu
+              sama lain untuk berbagi sumber daya dan informasi. Ada beberapa
+              jenis jaringan komputer, salah satunya adalah arsitektur
+              klien-server. Dalam tipe jaringan ini, simpul dapat berupa server
+              atau klien. Simpul server memberikan sumber daya seperti memori,
+              tenaga pemrosesan, atau data ke simpul klien. Simpul server juga
+              dapat mengelola perilaku simpul klien. Klien dapat saling
+              berkomunikasi satu sama lain, tetapi tidak dapat berbagi sumber
+              daya.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-computer"></i>
+            <h2>Computer Engineering</h2>
+            <p>
+              Pekerjaan di bidang sistem komputer melibatkan banyak hal yang
+              berbeda. Sebagai seseorang yang berkecimpung dalam bidang sistem
+              komputer, Saya bertugas untuk merancang, mengembangkan, dan
+              memelihara sistem komputer. Sistem komputer adalah sebuah
+              perangkat terintegrasi yang bisa menerima input, memprosesnya,
+              memberikan output, serta menyimpan data dan informasi yang ada di
+              dalamnya. Ada tiga komponen utama dalam sistem komputer yaitu
+              hardware, software, dan brainware. Namun, semua pekerjaan di
+              bidang ini bertujuan untuk memastikan bahwa sistem komputer dapat
+              melakukan apa yang kita inginkan dengan baik.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              Web designer adalah orang yang bertanggung jawab untuk mendesain
+              tampilan sebuah website. Mereka bekerja sama dengan web developer
+              untuk membuat website yang mudah digunakan dan menarik bagi
+              pengguna. Web designer harus memiliki kemampuan dalam bidang
+              desain grafis dan arsitektur informasi. Mereka harus dapat membuat
+              desain yang menarik dan mudah dipahami oleh pengguna. Pekerjaan
+              sebagai web designer melibatkan banyak hal yang berbeda tergantung
+              pada proyek spesifiknya. Namun, semua pekerjaan di bidang ini
+              bertujuan untuk membuat website yang mudah digunakan dan menarik
+              bagi pengguna.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- portfolio Start -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>
+                manufacturing uncookedrice dari beras ke nasi siap saji berbasis
+                Internet of Thing (IoT) dan Webservice
+              </h3>
+              <p>
+                Membuat alat sebagai tugas akhir dengan judul rancang bangun
+                alat manufacturing uncookedrice dari beras ke nasi siap saji
+                berbasis Internet of Thing (IoT) dan Webservice yang dapat
+                mengambil beras, membilas dan memasaknya hingga matang dengan
+                otomatis tahun 2022
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>smart kitchen berbasis mikrokontroller</h3>
+              <p>
+                Membuat alat praktek lapangan dengan judul Perancangan dan
+                pembuatan sistem keamanan smart kitchen untuk mengantisipasi
+                kebakaran berbasis microcontroller dengan regu 3 orang tahun
+                2021
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Front-End Web Developer</h3>
+              <p>
+                Sebagai Front-End Web Developer, saya bertanggung jawab untuk
+                mengembangkan dan merawat bagian depan dari sebuah situs web
+                atau aplikasi web. Saya menggunakan bahasa markup seperti HTML
+                untuk membuat halaman web yang ramah pengguna. Saya juga
+                bertanggung jawab untuk merawat dan meningkatkan situs web serta
+                mengoptimalkan aplikasi untuk kecepatan maksimum. Selain itu,
+                saya juga merancang fitur berbasis mobile dan bekerja sama
+                dengan pengembang back-end dan desainer web untuk meningkatkan
+                kegunaan.
+              </p>
+              <a href="#"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- portfolio end -->
+
+    <!-- Contack Start -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>afdhalulfikry07@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>+6285363770880</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/afdhalulfikry/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/afdhalul.fikry.3"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a
+                href="https://github.com/afdhalulfikry/afdhalulfikry.github.io/"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/afdhalul-fikry-2a9286255/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <!-- <span id="msg"></span> -->
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Created by <a href="#">Afdhalul Fikry</a>. | &copy; 2023</p>
+      </div>
+    </div>
+    <!-- Contack End -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
