@@ -69,13 +69,23 @@ nav {
   left: 0;
   right: 0;
   z-index: 9999;
-  background: rgb(0,0,0);
-  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.5) 100%);
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
 }
 
 body.darkMode nav {
-  background: rgb(255,255,255);
-  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.5) 100%);
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
 }
 
 nav a {
@@ -309,7 +319,7 @@ input[type="checkbox"]:checked ~ .check:after {
   opacity: 1;
 }
 
-.about-col-2 p{
+.about-col-2 p {
   line-height: 3vh;
 }
 
@@ -428,15 +438,25 @@ body.darkMode .services-list div:hover {
   font-size: 12px;
   margin-top: 20px;
   display: inline-block;
+  transition: 0.5s;
 }
 
 .services-list div a:hover {
-  color: #a5d7e8;
+  background-color: var(--secondary-color);
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+  display: block;
+  width: fit-content;
+  padding: 8px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 
 .services-list div:hover {
@@ -514,16 +534,23 @@ body.darkMode .services-list div:hover {
 
 .layer h3 {
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  color: #a5d7e8;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.layer p {
+  color: #ffffff;
 }
 
 .layer a {
   margin-top: 20px;
-  color: #576cbc;
+  color: #ffffff;
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
-  background: var(--primary-color);
+  background: #19376d;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -532,6 +559,15 @@ body.darkMode .services-list div:hover {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   text-align: center;
+}
+
+.layer a:hover {
+  background-color: #a5d7e8;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .work:hover img {
@@ -672,18 +708,22 @@ form .btn2 {
 }
 
 .copyright a {
-  color: var(--secondary-color);
+  color: #a5d7e8;
   font-weight: 700;
   text-decoration: none;
 }
 
 .copyright a:hover {
-  color: #a5d7e8;
+  color: #ffffff;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+}
+
+.copyright p {
+  color: #ffffff;
 }
 
 nav .fas {
