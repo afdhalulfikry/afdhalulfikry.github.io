@@ -69,6 +69,13 @@ nav {
   left: 0;
   right: 0;
   z-index: 9999;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.5) 100%);
+}
+
+body.darkMode nav {
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0.5) 100%);
 }
 
 nav a {
@@ -393,6 +400,15 @@ input[type="checkbox"]:checked ~ .check:after {
   -moz-transition: background 0.5s, transform 0.5s;
   -ms-transition: background 0.5s, transform 0.5s;
   -o-transition: background 0.5s, transform 0.5s;
+}
+
+body.darkMode .services-list div {
+  background: #ffffff;
+  color: #000;
+}
+
+body.darkMode .services-list div:hover {
+  background: #a5d7e8;
 }
 
 .services-list div i {
