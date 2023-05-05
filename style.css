@@ -292,11 +292,11 @@ input[type="checkbox"]:checked ~ .check:after {
 
 .about-col-1 img {
   width: 100%;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
 }
 
 .about-col-2 {
@@ -616,6 +616,14 @@ body.darkMode .services-list div:hover {
   flex-basis: 60%;
 }
 
+.contact-right input {
+  color: #000;
+}
+
+.contact-right textarea {
+  color: #000;
+}
+
 .contact-left p {
   margin-top: 30px;
 }
@@ -655,6 +663,13 @@ body.darkMode .services-list div:hover {
 .btn.btn2 {
   display: inline-block;
   background: #a5d7e8;
+}
+
+.btn2.btn3 {
+  margin-top: -10px;
+  margin-left: 10px;
+  /* position: relative;
+  right: 10px; */
 }
 
 .btn.btn2:hover {
@@ -728,6 +743,72 @@ form .btn2 {
 
 nav .fas {
   display: none;
+}
+
+/* pesan terkirim */
+
+#msg {
+  color: #61b752;
+  margin-top: -20px;
+  display: block;
+}
+
+/* button submit form dengan indikator loading*/
+
+.btn2 {
+  background-position: center;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.btn2:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%)
+    center/15000%;
+}
+.btn2:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+/* efek loading dan gelombang */
+
+.btn2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.loading-indicator {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.btn2.loading .btn-label {
+  visibility: hidden;
+}
+
+.btn2.loading .loading-indicator {
+  display: block;
 }
 
 /* css for small screens */
@@ -808,6 +889,12 @@ nav .fas {
 
   .copyright {
     font-size: 14px;
+  }
+
+  .btn.btn2.btn3 {
+    margin-top: -50px;
+    position: relative;
+    right: 10px;
   }
 }
 

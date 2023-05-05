@@ -90,3 +90,43 @@ window.addEventListener("load", function () {
     }
   });
 });
+
+// contact script spreadsheet beserta efek loading
+
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbyg5M9Kf7_2HTZdE810HARgA3kIaegnyNwUKrZpJU6FPNXJvinW7YfsrdHAqOxNZAsneg/exec";
+const form = document.forms["submit-to-google-sheet"];
+const msg = document.getElementById("msg");
+const button = document.querySelector("#subMit");
+
+button.addEventListener("click", function (e) {
+  let x = e.clientX - e.target.offsetLeft;
+  let y = e.clientY - e.target.offsetTop;
+
+  let ripples = document.createElement("span");
+  ripples.style.left = x + "px";
+  ripples.style.top = y + "px";
+  this.appendChild(ripples);
+
+  setTimeout(() => {
+    ripples.remove();
+  }, 1000);
+});
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  button.classList.add("loading");
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      msg.innerHTML = "Message sent successfully";
+      setTimeout(function () {
+        msg.innerHTML = "";
+      }, 5000);
+      form.reset();
+      button.classList.remove("loading");
+    })
+    .catch((error) => {
+      console.error("Error!", error.message);
+      button.classList.remove("loading");
+    });
+});
