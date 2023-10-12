@@ -833,7 +833,9 @@ nav .fas {
   }
 
   nav ul {
-    background: #576cbc;
+    /* background: #576cbc; */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* opacity: 0.5; */
     position: fixed;
     top: 0;
     right: -200px;
